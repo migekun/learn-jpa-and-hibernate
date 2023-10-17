@@ -1,9 +1,14 @@
 package com.manavas.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity
 public class Course {
 
+    @Id
     private long id;
     private String name;
     private String author;
