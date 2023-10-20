@@ -7,7 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class CourseJdbcRespository {
+public class CourseJdbcRepository {
     public static final String INSERT_SQL = """
         insert into course (id, name, author) 
         values (?, ?, ?);

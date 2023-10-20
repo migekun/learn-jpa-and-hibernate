@@ -1,6 +1,6 @@
 package com.manavas.springboot.learnjpaandhibernate.course;
 
-import com.manavas.springboot.learnjpaandhibernate.course.jdbc.CourseJdbcRespository;
+import com.manavas.springboot.learnjpaandhibernate.course.jdbc.CourseJdbcRepository;
 import com.manavas.springboot.learnjpaandhibernate.course.jpa.CourseJpaRepository;
 import com.manavas.springboot.learnjpaandhibernate.course.springdatajpa.CourseSpringDataJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class CourseCommandLineRunner implements CommandLineRunner {
 
     @Autowired
-    private CourseJdbcRespository repositoryJdbc;
+    private CourseJdbcRepository repositoryJdbc;
 
     @Autowired
     private CourseJpaRepository repositoryJpa;
